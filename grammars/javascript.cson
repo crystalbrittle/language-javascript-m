@@ -1,4 +1,4 @@
-'scopeName': 'source.js'
+'scopeName': 'source.m.js'
 'fileTypes': [
   'js'
   '_js'
@@ -1880,7 +1880,7 @@
           '2':
             'name': 'punctuation.definition.comment.end.js'
         'match': '(/\\*)(\\*/)'
-        'name': 'comment.block.empty.js'
+        'name': 'comment.bblock.empty.js'
       }
       {
         'begin': '/\\*\\*'
@@ -1891,7 +1891,7 @@
         'endCaptures':
           '0':
             'name': 'punctuation.definition.comment.end.js'
-        'name': 'comment.block.documentation.js'
+        'name': 'comment.bblock.documentation.js'
         'patterns': [
           {
             'include': 'source.jsdoc'
@@ -1907,16 +1907,29 @@
         'endCaptures':
           '0':
             'name': 'punctuation.definition.comment.end.js'
-        'name': 'comment.block.js'
+        'name': 'comment.bblock.js'
       }
       {
-        'begin': '//'
+        'begin': '//[^/]'
         'beginCaptures':
           '0':
             'name': 'punctuation.definition.comment.js'
         'end': '$'
         'name': 'comment.line.double-slash.js'
       }
+
+
+      # ~mark
+      {
+        'begin': '///'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.definition.comment.triple.js'
+        'end': '$'
+        'name': 'comment.line.dim.js'
+      }
+
+
     ]
   'switch_statement':
     'patterns': [
