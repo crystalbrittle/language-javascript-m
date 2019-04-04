@@ -147,6 +147,10 @@ scopes:
       scopes: 'comment.line.dim'
     },
     {
+      match: "^//^!",
+      scopes: 'comment.line.yellow'
+    },
+    {
       match: "^//",
       scopes: 'comment.line'
     },
@@ -256,6 +260,13 @@ scopes:
   '"await"': 'keyword.control'
   '"debugger"': 'keyword.control'
   '"delete"': 'keyword.control'
+
+
+  # ~mark
+  '"trace"': 'keyword.mark.orange'
+  '"trace.error"': 'keyword.mark.error'
+  '"_super"': 'keyword.mark.yellow'
+  #
 
   'jsx_attribute > property_identifier': 'entity.other.attribute-name'
   'jsx_opening_element > identifier': 'entity.name.tag'
