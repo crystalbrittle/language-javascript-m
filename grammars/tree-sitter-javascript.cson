@@ -143,12 +143,16 @@ scopes:
   'false': 'constant.language.boolean.false'
   'comment': [
     {
-      match: "^///",
-      scopes: 'comment.line.dim'
+      match: "^//\\^!",
+      scopes: 'comment.line.yellow'
     },
     {
-      match: "^//^!",
-      scopes: 'comment.line.yellow'
+      match: "^//\\^\\*",
+      scopes: 'comment.line.blue'
+    },
+    {
+      match: "^///",
+      scopes: 'comment.line.dim'
     },
     {
       match: "^//",
@@ -156,7 +160,7 @@ scopes:
     },
     'comment.block'
   ]
-  'hash_bang_line': 'comment.block'
+  'hash_bang_line': 'comment.line'
 
   '
     jsx_expression > "{",
