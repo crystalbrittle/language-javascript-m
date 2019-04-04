@@ -1,20 +1,20 @@
 {
-  "name": "language-javascript",
+  "name": "language-javascript-m",
   "version": "0.129.21",
-  "description": "JavaScript language support in Atom",
+  "description": "JavaScript-m language support in Atom",
   "engines": {
     "atom": "*",
     "node": "*"
   },
   "main": "lib/main",
-  "homepage": "http://atom.github.io/language-javascript",
+  "homepage": "https://github.com/crystalbrittle/language-javascript-m",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atom/language-javascript.git"
+    "url": "https://github.com/crystalbrittle/language-javascript-m.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/atom/language-javascript/issues"
+    "url": "https://github.com/crystalbrittle/language-javascript-m/issues"
   },
   "keywords": [
     "tree-sitter"
@@ -26,5 +26,10 @@
     "tree-sitter-javascript": "^0.13.10",
     "tree-sitter-jsdoc": "^0.13.4",
     "tree-sitter-regex": "^0.13.1"
+  },
+  "apmInstallSource": {
+    "type": "git",
+    "source": "https://github.com/crystalbrittle/language-javascript-m.git",
+    "sha": "bde462a93579d68027d01b007f1f1b290c5114f0"
   }
 }
