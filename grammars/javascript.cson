@@ -1,4 +1,4 @@
-'scopeName': 'source.m.js'
+'scopeName': 'source.js'
 'fileTypes': [
   'js'
   '_js'
@@ -1910,26 +1910,13 @@
         'name': 'comment.bblock.js'
       }
       {
-        'begin': '//[^/]'
+        'begin': '//'
         'beginCaptures':
           '0':
             'name': 'punctuation.definition.comment.js'
         'end': '$'
         'name': 'comment.line.double-slash.js'
       }
-
-
-      # ~mark
-      {
-        'begin': '///'
-        'beginCaptures':
-          '0':
-            'name': 'punctuation.definition.comment.triple.js'
-        'end': '$'
-        'name': 'comment.line.dim.js'
-      }
-
-
     ]
   'switch_statement':
     'patterns': [
