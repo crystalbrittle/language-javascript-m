@@ -1917,6 +1917,16 @@
         'end': '$'
         'name': 'comment.line.double-slash.js'
       }
+      # mark (
+      {
+        'begin': '///'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.definition.comment.js'
+        'end': '$'
+        'name': 'comment.bblock.js'
+      }
+      # mark )
     ]
   'switch_statement':
     'patterns': [
